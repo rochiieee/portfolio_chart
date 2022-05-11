@@ -1,6 +1,6 @@
 function fiveDayChart() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheetByName("PvD (Auto)");
+  var sheet = ss.getSheetByName("SHEET NAME");
   var value = sheet.getRange("A1").getValue();
   var range = sheet.getRange("I1:I").getValues();
 
@@ -25,7 +25,7 @@ function fiveDayChart() {
 //One-month chart
 function oneMonthChart() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheetByName("PvD (Auto)");
+  var sheet = ss.getSheetByName("SHEET NAME");
   var value = sheet.getRange("A1").getValue();
   var range = sheet.getRange("L1:L").getValues();
 
@@ -50,7 +50,7 @@ function oneMonthChart() {
 //6-month chart
 function sixMonthChart() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheetByName("PvD (Auto)");
+  var sheet = ss.getSheetByName("SHEET NAME");
   var value = sheet.getRange("A1").getValue();
   var range = sheet.getRange("O1:O").getValues();
 
@@ -75,7 +75,7 @@ function sixMonthChart() {
 //Annual Chart
 function oneYearChart() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();      
-  var sheet = ss.getSheetByName("PvD (Auto)");
+  var sheet = ss.getSheetByName("SHEET NAME");
   var value = sheet.getRange("A1").getValue();
   var range = sheet.getRange("R1:R").getValues();
 
@@ -101,7 +101,7 @@ function oneYearChart() {
 //Daily chart
 function dailyChart() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheetByName("PvD (Auto)");
+  var sheet = ss.getSheetByName("SHEET NAME");
   var value = sheet.getRange("A1").getValue();
   var range = sheet.getRange("F1:F").getValues();
 
@@ -120,7 +120,7 @@ function dailyChart() {
 
 function dayChartDelete() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheetByName("PvD (Auto)");
+  var sheet = ss.getSheetByName("SHEET NAME");
   var range = sheet.getRange("F2:F");
 
   range.clear();
