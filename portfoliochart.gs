@@ -7,7 +7,7 @@ function fiveDayChart() {
   var lastRow = null;                                 
   var i = 0;
   while(i < range.length) {
-    if (lastRow = 289){                                                
+    if (lastRow = 289){       // = no. of data points present e.g: for evey 8 hours, lastRow = 365 * (24/8))                                         
       sheet.getRange("I2").deleteCells(SpreadsheetApp.Dimension.ROWS)
       break;
     } else {
