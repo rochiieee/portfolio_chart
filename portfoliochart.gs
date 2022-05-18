@@ -7,8 +7,8 @@ function fiveDayChart() {
   var lastRow = null;                                 
   var i = 0;
   while(i < range.length) {
-    if (lastRow = 289){       // = no. of data points present e.g: for evey 8 hours, lastRow = 365 * (24/8))                                         
-      sheet.getRange("I2").deleteCells(SpreadsheetApp.Dimension.ROWS)
+    if (lastRow = 289){                                                 // = no. of data points present e.g: for evey 8 hours, lastRow = 365 * (24/8))                                         
+      sheet.getRange("I2").deleteCells(SpreadsheetApp.Dimension.ROWS)   //Shifts cells up by 1 upon every function call and deletes top most
       break;
     } else {
       if (range[i][0] !== "") {
@@ -19,7 +19,7 @@ function fiveDayChart() {
       }
     }
   }
-  sheet.getRange(`I${lastRow}`).setValue(value)
+  sheet.getRange(`I${lastRow}`).setValue(value)                         //Sets your portfolio value down to the bottom
 }
 
 //One-month chart
